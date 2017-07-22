@@ -1,6 +1,9 @@
 from moviepy.editor import ImageSequenceClip
 import argparse
+import imageio
 
+
+imageio.plugins.ffmpeg.download()
 
 def main():
     parser = argparse.ArgumentParser(description='Create driving video.')

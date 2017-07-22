@@ -3,6 +3,8 @@ import base64
 from datetime import datetime
 import os
 import shutil
+import sys
+
 
 import numpy as np
 import socketio
@@ -16,9 +18,12 @@ from keras.models import load_model
 import h5py
 from keras import __version__ as keras_version
 
+print(sys.path)
+#sys.path.append('C:\Users\ga37tez\AppData\Local\Programs\Python\Python35')
+
 sio = socketio.Server()
 app = Flask(__name__)
-model = None
+model = 'model'
 prev_image_array = None
 
 
